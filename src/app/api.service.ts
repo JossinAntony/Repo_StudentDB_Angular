@@ -20,4 +20,7 @@ viewAllStudents(){
   return this.http.get("http://localhost:3052/viewStudents");
 }
 
+editStudent(data){
+  return this.http.post("http://localhost:3052/updateStudent", data);
+}
 }

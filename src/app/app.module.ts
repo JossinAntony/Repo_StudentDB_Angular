@@ -9,12 +9,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { RetrieveStudentComponent } from './retrieve-student/retrieve-student.component';
 import { ViewStudentsComponent } from './view-students/view-students.component';
+import { EditEntryComponent } from './edit-entry/edit-entry.component';
 
 const appRoutes:Routes=[
  
   {path:'',component:AddStudentComponent},
   {path:'retrieve',component:RetrieveStudentComponent},
-  {path:'viewAll',component:ViewStudentsComponent}
+  {path:'viewAll',component:ViewStudentsComponent},
+  {path:'edit',component:EditEntryComponent}
 ]
 
 @NgModule({
@@ -23,7 +25,8 @@ const appRoutes:Routes=[
     NavbarComponent,
     AddStudentComponent,
     RetrieveStudentComponent,
-    ViewStudentsComponent
+    ViewStudentsComponent,
+    EditEntryComponent
   ],
   imports: [
     BrowserModule,

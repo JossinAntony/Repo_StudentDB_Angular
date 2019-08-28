@@ -16,4 +16,8 @@ retrieveStudent(data){
   return this.http.post("http://localhost:3052/retrieveStudentByAdmn", data);
 }
 
+viewAllStudents(){
+  return this.http.get("http://localhost:3052/viewStudents");
+}
+
 }

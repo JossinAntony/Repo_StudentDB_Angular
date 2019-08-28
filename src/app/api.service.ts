@@ -10,7 +10,10 @@ constructor(private http:HttpClient) { }
 
 insertStudent(data){
   return this.http.post("http://localhost:3052/insertStudent",data);
-  
+}
+
+retrieveStudent(data){
+  return this.http.post("http://localhost:3052/retrieveStudentByAdmn", data);
 }
 
 }

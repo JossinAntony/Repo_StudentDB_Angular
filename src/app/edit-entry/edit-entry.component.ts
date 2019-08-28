@@ -34,5 +34,10 @@ export class EditEntryComponent implements OnInit {
     })
   }
 
+  delete(){
+    this.apiservice.deleteStudent(this.studentData[0]).subscribe((response:Array<object>)=>{
+      alert("Entry deleted!")
+    })
+  }
 
 }

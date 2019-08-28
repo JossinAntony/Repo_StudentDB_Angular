@@ -23,4 +23,9 @@ viewAllStudents(){
 editStudent(data){
   return this.http.post("http://localhost:3052/updateStudent", data);
 }
+
+deleteStudent(data){
+  return this.http.post("http://localhost:3052/deleteStudent", data);
+}
+
 }

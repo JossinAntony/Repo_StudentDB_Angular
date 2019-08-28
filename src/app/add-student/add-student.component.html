@@ -1,0 +1,52 @@
+<div class="container">
+    <br><br><br>
+  <div class="row">
+      <div class="col col-12 col-sm-2"></div>
+      <div class="col col-12 col-sm-8 border border-secondary rounded">
+          <br><br><br>
+          <h1 class='text-center'>STUDENT SUBMISSION FORM</h1>
+          <br><br>
+          <form (ngSubmit)=onSubmit(f) #f="ngForm">
+              <table class="table table-borderless">
+                  <tr>
+                      <td><h5 class="text-center">Name:</h5></td>
+                      <td> <input type="text" class="form-control" name="uname" ngModel> </td>
+                  </tr>
+                  <tr>
+                      <td><h5 class="text-center">Roll no:</h5></td>
+                      <td> <input type="text" class="form-control" name="uroll" ngModel> </td>
+                  </tr>
+                  <tr>
+                      <td><h5 class="text-center">Admission no:</h5></td>
+                      <td> <input type="text" class="form-control" name="uadmn" ngModel> </td>
+                  </tr>
+                  <tr>
+                    <td><h5 class="text-center">Date of Birth:</h5></td>
+                    <td> <input type="date" class="form-control" name="udob" ngModel> </td>
+                  </tr>
+                  <tr>
+                    <td><h5 class="text-center">Email Id:</h5></td>
+                    <td> <input type="text" class="form-control" name="umail" ngModel> </td>
+                  </tr>
+                  <tr>
+                    <td><h5 class="text-center">Branch:</h5></td>
+                    <td> <input type="text" class="form-control" name="ubrnch" ngModel> </td>
+                  </tr>
+                  <tr>
+                    <td><h5 class="text-center">College:</h5></td>
+                    <td> <input type="text" class="form-control" name="ucolg" ngModel> </td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td> <button class="btn btn-info" type="submit" ngSubmit>SUBMIT</button></td>
+                  </tr>
+          </table>
+          </form>
+      </div>
+      
+      <div class="col col-12 col-sm-2"></div>
+  </div>
+</div>
+<br><br><br>
+
+

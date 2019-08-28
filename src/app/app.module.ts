@@ -6,15 +6,21 @@ import {FormsModule} from '@angular/forms';
  
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AddStudentComponent } from './add-student/add-student.component';
+import { RetrieveStudentComponent } from './retrieve-student/retrieve-student.component';
 
 const appRoutes:Routes=[
-  {path:'',component:NavbarComponent}
+ 
+  {path:'',component:AddStudentComponent},
+  {path:'retrieve',component:RetrieveStudentComponent}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddStudentComponent,
+    RetrieveStudentComponent
   ],
   imports: [
     BrowserModule,

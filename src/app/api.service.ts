@@ -9,23 +9,23 @@ export class ApiService {
 constructor(private http:HttpClient) { }
 
 insertStudent(data){
-  return this.http.post("http://localhost:3052/insertStudent",data);
+  return this.http.post("http://customapi-jossin.herokuapp.com/insertStudent",data);
 }
 
 retrieveStudent(data){
-  return this.http.post("http://localhost:3052/retrieveStudentByAdmn", data);
+  return this.http.post("http://customapi-jossin.herokuapp.com/retrieveStudentByAdmn", data);
 }
 
 viewAllStudents(){
-  return this.http.get("http://localhost:3052/viewStudents");
+  return this.http.get("http://customapi-jossin.herokuapp.com/viewStudents");
 }
 
 editStudent(data){
-  return this.http.post("http://localhost:3052/updateStudent", data);
+  return this.http.post("http://customapi-jossin.herokuapp.com/updateStudent", data);
 }
 
 deleteStudent(data){
-  return this.http.post("http://localhost:3052/deleteStudent", data);
+  return this.http.post("http://customapi-jossin.herokuapp.com/deleteStudent", data);
 }
 
 }

@@ -9,7 +9,7 @@ import {ApiService  } from '../api.service';
 })
 export class ViewStudentsComponent implements OnInit {
 
-  private students : Array<object>;
+  students : Array<object>;
   constructor(private apiservice:ApiService) { }
 
   ngOnInit() {

@@ -9,8 +9,8 @@ import {ApiService} from '../api.service';
 })
 export class EditEntryComponent implements OnInit {
 
-  private studentData : Array<object>;
-  private status = false;
+   studentData : Array<object>;
+   status = false;
   constructor(private apiservice:ApiService) { }
 
   ngOnInit() {

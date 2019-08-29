@@ -9,8 +9,8 @@ import {NgForm} from '@angular/forms';
 })
 export class RetrieveStudentComponent implements OnInit {
 
-  private studentData : Array<object>;
-  private status = false;
+   studentData : Array<object>;
+   status = false;
   constructor(private apiservice:ApiService) { }
 
   ngOnInit() {
